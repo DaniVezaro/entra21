@@ -1,0 +1,18 @@
+table {
+border-collapse: collapse;
+ /*Necessário para border-spacinf funcionar*/
+ border-spacing: 10px;
+ /*Escapamento entre células */
+ margin: 20px;
+ /* Espaçamento externo da tabela*/
+border: 2px solid black;
+/*Borda da tabela*/
+}
+
+th,
+td {
+    padding: 10px;
+    /*Espaçamento interno das células*/
+    border: 1px solid black;
+    /*Borda das células*/
+}
