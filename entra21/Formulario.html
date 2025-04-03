@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <body style="background-color: rgb(71, 112, 25);"></body>
+    <h1 style="color: rgb(176, 204, 150);">Cadastro de Usuário</h1>
+    <form action="index.html" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Novo usuário</legend>
+
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="Nome" placeholder="Digite seu nome">
+                <br><br><br>
+
+                <label for="cpf">CPF:</label>
+                <input type="number" nome="cpf" id="cpf"  placeholder="Digite seu cpf">
+                <br><br><br>
+
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+                <br><br><br>
+
+        </fieldset>
+
+        <label for="descricao">Descrição do pedido:</label><br>
+        <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        <br><br><br>
+
+        <select name="estado">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+        <br><br><br>
+
+        <label for="genero">Genero: </label><br>
+        <label for="F">Femino</label>
+        <input type="radio" name="genero" value="femino">
+        <label for="M">Masculino</label>
+        <input type="radio" name="genero" value="masculino">
+        <br><br><br>
+
+        <label for="esporte">Selecione os esportes</label><br>
+        <label for="futebol">Futebol</label>
+        <input type="checkbox" name="interesses[]" value="esporte" id="esporte"><br>
+        <label for="volei">Vôlei</label>
+        <input type="checkbox" name="interesses[]" value="esporte" id="esporte"><br>
+        <label for="nataçao">Natação</label>
+        <input type="checkbox" name="interesses[]" value="esporte" is="esporte"><br>
+        <br><br><br>
+
+        <label for="nasc">Data de nascimento</label><br>
+        <input type="date" name="nascimento" id="nascimento"><br>
+        <br><br>
+
+        <label for="horas">Horário</label><br>
+        <input type="time" name="horario" id="horas">
+        <br><br>
+        <br><br>
+
+        <label for="doc">Enivar arquivo</label><br>
+        <input type="file" name="doc" id="doc" accept=".pdf,.txt"></imput>
+        <br><br>
+        <br><br>
+
+        <button type="reset">Limpar formulário</button><br><br>
+
+        <button type="submit">Enviar</button>
+
+
+
+
+    </form>
+</body>
+
+</html>
